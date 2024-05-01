@@ -12,7 +12,7 @@
 <body>
     <div class="fundo">
         <header>
-            <div class="imagem">
+            <div id="imagem">
                <img src="Assets\fotoMurilo.JPEG" alt="foto-pessoal" height="115px" width="115px">            
             </div>
             <div class="cabecalho">
@@ -20,7 +20,7 @@
                     <a href="#"><i class="fa-solid fa-house-user"></i></a>
                 </li>
                 <li>
-                    <a href="#">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                 </li>
                 <li>
                     <a href="#">Cursos</a>
@@ -33,18 +33,46 @@
         </header> <!--Cabecalho-->
         <div class="container-text">
             <div class="text">
-                <h3>Ola, leitores</h3>
+                <h3>Ola!</h3>
                 <h1>Eu sou <span>Murilo Fernandes</span> </h1>
-                <p>Sou técnico de suporte em Infraestrutura, realizando a graduação de Engenharia de Sofware <br> e estudando Java direcionado a banco de dados</p>
-                <div class="redes">
-                    <a href="https://www.instagram.com/murilofrnd/"><i class="fa-brands fa-instagram"></i></a><!--LINK INSTAGRAM-->
-                    <a href="https://www.facebook.com/profile.php?id=100068596419610"><i class="fa-brands fa-facebook"></i></a><!--LINK FACEBOOK-->
-                    <a href="https://www.linkedin.com/in/murilo-fernandes-818882249/"><i class="fa-brands fa-linkedin-in"></i></a><!--LINK LINKEDIN-->
-                    <a href="https://github.com/murilofrnd"><i class="fa-brands fa-github"></i></a> <!--LINK GITHUB-->
-                </div> <!--Redes sociais-->
-                <button class="btn">Sobre Mim</button>
+                <p>Sou Técnico de suporte em Infraestrutura de TI, realizando a graduação de Engenharia de Sofware <br>sou apaixonado por tecnologia e busco sempre me especializar da melhor maneira!</p>
+                
+                <a href="#sobre"><button class="btn" >Sobre Mim</button></a>
             </div><!--Texos-->
         </div>
     </div>
+
+
+<section id="sobre" class="about max-width">
+<div class="fundo">
+    <div class="about_left">
+        <div class="text"><h2 class="secondary-title"><span>Quem sou eu?</span></h2>
+        <p>
+            Se conecte comigo nas redes sociais fornecidas abaixo e compreenda um pouco mais sobre meu trabalho!
+        </p></div>
+
+<!--Redes sociais-->
+        <div class="redes">
+            <a href="https://www.instagram.com/murilofrnd/"><i class="fa-brands fa-instagram"></i></a><!--LINK INSTAGRAM-->
+            <a href="https://www.facebook.com/profile.php?id=100068596419610"><i class="fa-brands fa-facebook"></i></a><!--LINK FACEBOOK-->
+            <a href="https://www.linkedin.com/in/murilo-fernandes-818882249/"><i class="fa-brands fa-linkedin-in"></i></a><!--LINK LINKEDIN-->
+            <a href="https://github.com/murilofrnd"><i class="fa-brands fa-github"></i></a> <!--LINK GITHUB-->
+        </div> 
+    </div>
+
+    <div class="about_right">
+         <div class="text"><h3 class="tertiary-title mb-m">
+            Desenvolvedor em formação apaixonado por tecnologias e com objetivo de me especializar em Java!
+        </h3></div>
+
+        <div class="text"><p>
+            Olá, me chamo Murilo Fernandes, futuro desenvolvedor de java, buscando mais conhecimento e experiência para que possa me aperfeiçoar. 
+            Aceito sempre novos desafios para melhoria de minhas habilidades e melhor aprendizado, tenho conhecimento de lógica de programação, 
+            programas básicos feitos com auxílio na faculdade em C e JavaScript.
+        </p></div>
+    </div>
+</div>
+</section>
+    <script src="script.js"></script>
 </body>
 </html>
