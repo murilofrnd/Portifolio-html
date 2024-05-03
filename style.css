@@ -38,16 +38,57 @@ header{
     cursor: pointer;
 }
 
+
+
 .cabecalho a{
     color: white;
     font-size: 15px;
 
 }
-
 .cabecalho a:hover{
     color: #0c9eff;
     transition: 0.1s all;
 }
+
+.cabecalho-sobre{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.cabecalho-sobre a{
+    color: white;
+    font-size: 15px;
+
+}
+
+.cabecalho-sobre a:hover{
+    color: #0c9eff;
+    transition: 0.1s all;
+}
+
+.cabecalho-projetos{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.cabecalho-projetos a{
+    color: white;
+    font-size: 15px;
+
+}
+
+.cabecalho-projetos a:hover{
+    color: #0c9eff;
+    transition: 0.1s all;
+}
+
+
 
 #imagem{
 
@@ -116,3 +157,41 @@ button:hover{
 .btn{
     margin-top: 10px;
 }
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 182, 1, 0.568);
+    border-radius: 40px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.img-port {
+    width: calc(33.33% - 20px); /* Definindo a largura dos blocos com margem entre eles */
+    margin: 10px; /* Adicionando margem entre os blocos */
+    height: 260px;
+    background-color: rgb(1, 55, 116);
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 40px;
+    transition: 8s;
+    cursor: pointer;
+    position: relative;
+    float: left; /* Adicionando flutuação para alinhar os blocos lado a lado */
+    box-sizing: border-box; /* Garantindo que a largura e a margem não excedam a largura total */
+}
+
