@@ -87,7 +87,24 @@ header{
     color: #0c9eff;
     transition: 0.1s all;
 }
+.cabecalho-historico{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
 
+.cabecalho-historico a{
+    color: white;
+    font-size: 15px;
+
+}
+
+.cabecalho-historico a:hover{
+    color: #0c9eff;
+    transition: 0.1s all;
+}
 
 
 #imagem{
