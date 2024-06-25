@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     font-family: "Kode Mono", "italic";
 }
 
-body{
+body {
     overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body{
     height: 100vh;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
@@ -31,7 +31,7 @@ header{
     padding-top: 1rem;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     gap: 3rem;
     font-weight: 300;
@@ -40,36 +40,18 @@ header{
 
 
 
-.cabecalho a{
-    color: white;
-    font-size: 15px;
-
-}
-.cabecalho a:hover{
-    color: #0c9eff;
-    transition: 0.1s all;
-}
-
-.cabecalho-sobre{
-    display: flex;
-    gap: 3rem;
-    font-weight: 300;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.cabecalho-sobre a{
+.cabecalho a {
     color: white;
     font-size: 15px;
 
 }
 
-.cabecalho-sobre a:hover{
+.cabecalho a:hover {
     color: #0c9eff;
     transition: 0.1s all;
 }
 
-.cabecalho-projetos{
+.cabecalho-sobre {
     display: flex;
     gap: 3rem;
     font-weight: 300;
@@ -77,17 +59,18 @@ header{
     margin-bottom: 30px;
 }
 
-.cabecalho-projetos a{
+.cabecalho-sobre a {
     color: white;
     font-size: 15px;
 
 }
 
-.cabecalho-projetos a:hover{
+.cabecalho-sobre a:hover {
     color: #0c9eff;
     transition: 0.1s all;
 }
-.cabecalho-historico{
+
+.cabecalho-projetos {
     display: flex;
     gap: 3rem;
     font-weight: 300;
@@ -95,19 +78,38 @@ header{
     margin-bottom: 30px;
 }
 
-.cabecalho-historico a{
+.cabecalho-projetos a {
     color: white;
     font-size: 15px;
 
 }
 
-.cabecalho-historico a:hover{
+.cabecalho-projetos a:hover {
+    color: #0c9eff;
+    transition: 0.1s all;
+}
+
+.cabecalho-historico {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.cabecalho-historico a {
+    color: white;
+    font-size: 15px;
+
+}
+
+.cabecalho-historico a:hover {
     color: #0c9eff;
     transition: 0.1s all;
 }
 
 
-#imagem{
+#imagem {
 
     height: 140px;
     width: 140px;
@@ -118,14 +120,14 @@ header{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
 }
 
-img{
+img {
     border-radius: 50%;
 }
 
-button{
+button {
     color: #2ecc71;
     background: transparent;
     border: solid 1px #2ecc71;
@@ -135,71 +137,101 @@ button{
     width: 158px;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #0c9eff;
     color: #fff;
     transition-delay: 0.01s;
 }
 
-.container-text{
+.container-text {
     padding: 150px 0 0 130px;
 }
-.text h3{
+
+.text h3 {
     color: white;
     font-size: 15px;
     font-weight: 300;
 }
 
-.text h1{
+.text h1 {
     color: #fff;
     margin-top: 15px;
     font-weight: 400;
 }
-.text span{
+
+.text span {
     color: #2ecc71;
 }
-.text p{
+
+.text p {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.redes a{
+.redes a {
     color: #2ecc71;
     padding: 10px;
     margin-top: 12spx;
 
 }
-.btn{
+
+.btn {
     margin-top: 10px;
 }
 
-.overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(67, 182, 1, 0.568);
-    border-radius: 40px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    opacity: 0;
-    transition: .5s;
+.content-main {
+    margin: 30px
 }
 
-.overlay:hover {
-    opacity: 1;
+.content-main .project {
+    border: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.content-main .project div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.content-main .project div .date-create {
+    color: #8b949e;
+    border: 1px solid #8b949e;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.content-main .project div .title {
+    color: #2ecc71;
+}
+
+.content-main .project .language .circle {
+    background-color: #47a6f0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #30363d;
+    border-radius: 50%;
 }
 
 .img-port {
-    width: calc(33.33% - 20px); /* Definindo a largura dos blocos com margem entre eles */
-    margin: 10px; /* Adicionando margem entre os blocos */
+    width: calc(33.33% - 20px);
+    /* Definindo a largura dos blocos com margem entre eles */
+    margin: 10px;
+    /* Adicionando margem entre os blocos */
     height: 260px;
     background-color: rgb(1, 55, 116);
     background-size: cover;
@@ -208,7 +240,8 @@ button:hover{
     transition: 8s;
     cursor: pointer;
     position: relative;
-    float: left; /* Adicionando flutuação para alinhar os blocos lado a lado */
-    box-sizing: border-box; /* Garantindo que a largura e a margem não excedam a largura total */
+    float: left;
+    /* Adicionando flutuação para alinhar os blocos lado a lado */
+    box-sizing: border-box;
+    /* Garantindo que a largura e a margem não excedam a largura total */
 }
-
