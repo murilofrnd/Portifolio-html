@@ -16,34 +16,40 @@ imagem.addEventListener("mouseleave", () => {
     img.style.transform = "scale(1)";
 });
 
-const respositories = document.querySelector(".content-main");
+// Seleciona o elemento onde os projetos serão adicionados
+document.addEventListener('DOMContentLoaded', function () {
+    const projetosContainer = document.querySelector(".content-main"); // Seleciona o container dos projetos
 
-function getApiGitHub() {
-    fetch('https://api.github.com/users/murilofrnd/repos')
-        .then(async res => {
-            if (!res.ok) {
-                throw new Error(res.status);
-            }
-            let data = await res.json();
-            data.map(item => {
-                let project = document.createElement('div');
+    function getApiGitHub() {
+        fetch('https://api.github.com/users/murilofrnd/repos')
+            .then(async res => {
+                if (!res.ok) {
+                    throw new Error('Erro ao buscar os dados da API do GitHub');
+                }
+                let data = await res.json();
+                data.forEach(item => {
+                    let project = document.createElement('div');
+                    project.classList.add('project');
 
-                project.innerHTML = `
-                <div class="project">
-                    <div>
-                        <h4 class="title">${item.name}</h4>
-                        <span class="date-create">${Intl.DateTimeFormat('PT-BR').format(new Date(item.created_at))}</span>
-                    </div>
-                    <div>
-                        <a href="${item.html_url}" target="_blank">${item.html_url}</a>
-                        <span class="language"><span class="circle"></span>${item.language}</span>
-                    </div>
-                </div>
-                `
+                    project.innerHTML = `
+                        <div>
+                            <h4 class="title">${item.name}</h4>
+                            <span class="date-create">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
+                        </div>
+                        <div>
+                            <a href="${item.html_url}" target="_blank">${item.html_url}</a>
+                            <span class="language"><span class="circle"></span>${item.language}</span>
+                        </div>
+                    `;
 
-                respositories.appendChild(project);
+                    projetosContainer.appendChild(project);
+                });
             })
-        })
-}
+            .catch(error => {
+                console.error('Erro ao buscar a API do GitHub:', error);
+            });
+    }
 
-getApiGitHub()
+    getApiGitHub(); // Chama a função para buscar os projetos ao carregar a página
+});
+

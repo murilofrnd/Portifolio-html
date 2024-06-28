@@ -10,15 +10,17 @@
 }
 
 body {
-    overflow: hidden;
+   width: 100%;
+   height: auto;
+   text-align: center;
 }
 
 .fundo {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-image: url(background.jpg);
+    background-color: #47a6f0;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
@@ -29,6 +31,8 @@ header {
     align-items: center;
     text-align: center;
     padding-top: 1rem;
+    margin-bottom: 3em;
+    background-color: #1f1f1f;
 }
 
 .cabecalho {
@@ -37,8 +41,6 @@ header {
     font-weight: 300;
     cursor: pointer;
 }
-
-
 
 .cabecalho a {
     color: white;
@@ -50,64 +52,6 @@ header {
     color: #0c9eff;
     transition: 0.1s all;
 }
-
-.cabecalho-sobre {
-    display: flex;
-    gap: 3rem;
-    font-weight: 300;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.cabecalho-sobre a {
-    color: white;
-    font-size: 15px;
-
-}
-
-.cabecalho-sobre a:hover {
-    color: #0c9eff;
-    transition: 0.1s all;
-}
-
-.cabecalho-projetos {
-    display: flex;
-    gap: 3rem;
-    font-weight: 300;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.cabecalho-projetos a {
-    color: white;
-    font-size: 15px;
-
-}
-
-.cabecalho-projetos a:hover {
-    color: #0c9eff;
-    transition: 0.1s all;
-}
-
-.cabecalho-historico {
-    display: flex;
-    gap: 3rem;
-    font-weight: 300;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.cabecalho-historico a {
-    color: white;
-    font-size: 15px;
-
-}
-
-.cabecalho-historico a:hover {
-    color: #0c9eff;
-    transition: 0.1s all;
-}
-
 
 #imagem {
 
@@ -182,20 +126,26 @@ button:hover {
     margin-top: 10px;
 }
 
-.content-main {
-    margin: 30px
-}
-
-.content-main .project {
-    border: 1px solid #30363d;
+#sobre{
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
-    border-radius: 6px;
-    margin: 20px;
+    overflow: visible;
 }
 
+.content-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+}
+.content-main .project {
+    width: 700px;
+    background-color: #1f1f1f;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    color: white; 
+}
 .content-main .project div {
     display: flex;
     justify-content: space-between;
@@ -205,20 +155,21 @@ button:hover {
     margin: 20px;
 }
 
-.content-main .project div .date-create {
-    color: #8b949e;
-    border: 1px solid #8b949e;
+.content-main .project .date-create {
+    color: #8b949e; 
+    background-color: rgba(139, 148, 158, 0.1);
     border-radius: 20px;
-    padding: 5px 10px;
-    font-size: 0.9rem;
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
 }
 
-.content-main .project div .title {
+.content-main .project .title {
     color: #2ecc71;
+    font-size: 1.2rem;
 }
 
 .content-main .project .language .circle {
-    background-color: #47a6f0;
+    background-color: #47a6f0; 
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -229,9 +180,7 @@ button:hover {
 
 .img-port {
     width: calc(33.33% - 20px);
-    /* Definindo a largura dos blocos com margem entre eles */
     margin: 10px;
-    /* Adicionando margem entre os blocos */
     height: 260px;
     background-color: rgb(1, 55, 116);
     background-size: cover;
@@ -241,7 +190,6 @@ button:hover {
     cursor: pointer;
     position: relative;
     float: left;
-    /* Adicionando flutuação para alinhar os blocos lado a lado */
     box-sizing: border-box;
-    /* Garantindo que a largura e a margem não excedam a largura total */
 }
+
