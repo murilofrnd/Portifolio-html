@@ -10,8 +10,8 @@
 }
 
 body {
-   width: 100%;
-   height: auto;
+   width: auto;
+   height: 1000px;
    text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 100vh;
+    height: 1000px;
 }
 
 header {
